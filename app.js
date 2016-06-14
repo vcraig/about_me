@@ -1,2 +1,6 @@
 //"use strict";
-alert("So???");
+alert('So???');
+
+
+
+//answer1.toLowerCase();
