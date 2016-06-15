@@ -52,11 +52,6 @@
 // Q6 - prompt numeric input. Respond to user if guess is too high, too low,
 //or correct. Allow user four guesses.
 var counter = 0;
-// while (counter < 4) {
-//   counter += 1;
-//   console.log(counter);
-// }
-
 var valsAge = 0;
 var valsAge = parseInt(prompt('How old is Val?'));
 while ((valsAge !== 39) && (counter < 4)) {
@@ -70,11 +65,14 @@ while ((valsAge !== 39) && (counter < 4)) {
     counter += 1;
     console.log(counter);
   }
-  else {
+  if (valsAge === 39){
     alert('Correct answer.');
   }
+  if (counter > 3) {
+    alert('Sorry. You ran out of guesses.');
+  }
 }
-alert('Sorry. You ran out of guesses.');
+
 
 // var answer6 = prompt('Q6: How old is Val?');
 // console.log(answer6);
