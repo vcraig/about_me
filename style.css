@@ -1,6 +1,8 @@
 * {
   color: black;
 line-height: 1.4em;
+font-family: "Courier New", Courier, monospace;
+letter-spacing: 0.15em;
 
 }
 
@@ -17,19 +19,10 @@ div p {
   color: black;
 
 }
-div h2 {
+.my_list h2 {
   color: grey;
 
 }
 div ul {
   color: maroon;
-
-}
-.my_list {
-  color: brown;
-
-}
-.questions {
-  color: gold;
-
 }
