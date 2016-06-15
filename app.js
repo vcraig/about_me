@@ -4,7 +4,6 @@ var visitorName = prompt('Would you kindly input your name?');
 alert('Howdy ' + visitorName + '!');
 
 // Five Questions for user input, followed by alerts.
-
 var answer1 = prompt('Q1: Does Val care about astrology?').toLowerCase();
 console.log(answer1);
 if (answer1 === 'yes' || answer1 === 'y') {
