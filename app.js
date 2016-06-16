@@ -75,28 +75,28 @@ function runLogic6() {
   var valsAge = parseInt(prompt('How old is Val?'));
 // console.log(valsAge);
   while (counter < 3) {
-  if (valsAge === 39) {
-    console.log('is this happening?');
-    alert('Correct answer.');
-    tallyCorrect += 1;
-    break;
+    if (valsAge === 39) {
+      console.log('is this happening?');
+      alert('Correct answer.');
+      tallyCorrect += 1;
+      break;
+    }
+    else if (valsAge < 39) {
+      var valsAge = parseInt(prompt('Too low. Guess again.'));
+      counter += 1;
+      console.log(counter);
+    }
+    else if (valsAge > 39) {
+      var valsAge = parseInt(prompt('Too high. Guess again.'));
+      counter += 1;
+      console.log(counter);
+    }
+    else if (isNaN(valsAge)){
+      var valsAge = prompt('Wrong guess. Try again!');
+      counter++;
+      console.log(counter);
+    }
   }
-  else if (valsAge < 39) {
-    var valsAge = parseInt(prompt('Too low. Guess again.'));
-    counter += 1;
-    console.log(counter);
-  }
-  else if (valsAge > 39) {
-    var valsAge = parseInt(prompt('Too high. Guess again.'));
-    counter += 1;
-    console.log(counter);
-  }
-  else if (isNaN(valsAge)){
-    var valsAge = prompt('Wrong guess. Try again!');
-    counter++;
-    console.log(counter);
-  }
-}
   if (counter > 3) {
     alert('Sorry. You ran out of guesses.');
   }
