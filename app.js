@@ -50,11 +50,12 @@
 // }
 
 // Q6 - prompt numeric input. Respond to user if guess is too high, too low,
-//or correct. Allow user four guesses.
+// or correct. Allow user four guesses.
+var tallyCorrect = 0;
 var counter = 0;
 var valsAge = 0;
 var valsAge = parseInt(prompt('How old is Val?'));
-while ((valsAge !== 39) && (counter < 4)) {
+while ((valsAge !== 39) && (counter < 5)) {
   if (valsAge < 39) {
     var valsAge = parseInt(prompt('Too low. Guess again.'));
     counter += 1;
@@ -67,12 +68,31 @@ while ((valsAge !== 39) && (counter < 4)) {
   }
   if (valsAge === 39){
     alert('Correct answer.');
+    tallyCorrect += 1;
   }
   if (counter > 3) {
     alert('Sorry. You ran out of guesses.');
   }
 }
+console.log('Tally following Q6 = ' + tallyCorrect);
 
+//Q7: User given six tries to guess one out of several correct responses.
+var formerDomicile = ['ct','nj','ny','tx','connecticut','new jersey','new york','texas'];
+var counter = 0;
+while (counter < 7) {
+
+  var myQuestion = prompt('Guess which state I have lived in.');
+  console.log('lowercase response ' + myQuestion);
+  for (var i = 0; i < formerDomicile.length; i++)
+    if (formerDomicile[i] === myQuestion) {
+      alert('correct');
+      counter++;
+      tallyCorrect += 1;
+      console.log(i);
+    }
+}
+alert('Sorry. You have used all your attempts.');
+console.log('Tally following Q7 = ' + tallyCorrect);
 
 // var answer6 = prompt('Q6: How old is Val?');
 // console.log(answer6);
