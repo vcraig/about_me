@@ -2,7 +2,7 @@
 //ask name of visitor
 var visitorName = prompt('Would you kindly input your name?');
 alert('Howdy ' + visitorName + '!');
-
+/*
 // Five Questions for user input, followed by alerts.
 var answer1 = prompt('Q1: Does Val care about astrology?').toLowerCase();
 console.log(answer1);
@@ -48,34 +48,47 @@ if (answer1 === 'yes' || answer1 === 'y') {
 else {
   alert('You are correct! Humans should not wear brocolli.');
 }
-
+*/
 // Q6 - prompt numeric input. Respond to user if guess is too high, too low,
 // or correct. Allow user four guesses.
 var tallyCorrect = 0;
 var counter = 0;
-var valsAge = 0;
-var valsAge = parseInt(prompt('How old is Val?'));
-while ((valsAge !== 39) && (counter < 5)) {
-  if (valsAge < 39) {
+// var valsAge = 0;
+console.log('while loop about to start');
+console.log(counter);
+function questionLogic() {
+  var valsAge = parseInt(prompt('How old is Val?'));
+// console.log(valsAge);
+  while (counter < 3) {
+  if (valsAge === 39) {
+    console.log('is this happening?');
+    alert('Correct answer.');
+    tallyCorrect += 1;
+    break;
+  }
+  else if (valsAge < 39) {
     var valsAge = parseInt(prompt('Too low. Guess again.'));
     counter += 1;
     console.log(counter);
   }
-  if (valsAge > 39) {
+  else if (valsAge > 39) {
     var valsAge = parseInt(prompt('Too high. Guess again.'));
     counter += 1;
     console.log(counter);
   }
-  if (valsAge === 39){
-    alert('Correct answer.');
-    tallyCorrect += 1;
+  else if (isNaN(valsAge)){
+    var valsAge = prompt('Wrong guess. Try again!');
+    counter++;
+    console.log(counter);
   }
+}
   if (counter > 3) {
     alert('Sorry. You ran out of guesses.');
   }
 }
+questionLogic();
 console.log('Tally following Q6 = ' + tallyCorrect);
-
+/*
 //Q7: User given six tries to guess one out of several correct responses.
 var tallyCorrect = 0;
 var formerDomicile = ['ct','nj','ny','tx','connecticut','new jersey','new york','texas'];
@@ -98,6 +111,6 @@ while (counter < 6) {
     alert('Sorry. You have used all your attempts.');
   }
 }
-
+*/
 console.log('Tally following Q7 = ' + tallyCorrect);
 document.write('Congrats! You submitted = ' + tallyCorrect) + ' correct responses.';
