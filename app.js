@@ -101,16 +101,3 @@ while (counter < 6) {
 
 console.log('Tally following Q7 = ' + tallyCorrect);
 document.write('Congrats! You submitted = ' + tallyCorrect) + ' correct responses.';
-
-// var answer6 = prompt('Q6: How old is Val?');
-// console.log(answer6);
-// if (answer6 > 47) {
-//   prompt('Too high. Guess again.');
-//   //prompt();
-// }
-// else if (answer6 < 47) {
-//   prompt('Too low. Guess again.');
-// }
-// else {
-//   alert('Correct!');
-// }
