@@ -7,8 +7,7 @@ About Me page for code 201
 * Updated ReadMe file.
 * Cleaned up some linter items.
 
-### Weekend Work,
-#with a sleeping dog for company.
+### Weekend Work
 
 Grade for work submitted 6/15 AM, https://github.com/vcraig/about_me.git
 FIXED 1) The indentation on your html is off which should be fixed.  You should also not leave large chunks of commented out code, it should be deleted.
