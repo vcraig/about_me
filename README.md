@@ -11,12 +11,12 @@ About Me page for code 201
 #with a sleeping dog for company.
 
 Grade for work submitted 6/15 AM, https://github.com/vcraig/about_me.git
-1) The indentation on your html is off which should be fixed.  You should also not leave large chunks of commented out code, it should be deleted.
-2) on the CSS good work organizing from least specific to most specific.  The extra space between the modifiers and the closing brackets shouldn't be there.   You can put one between each modifier to make it easily readable.
+FIXED 1) The indentation on your html is off which should be fixed.  You should also not leave large chunks of commented out code, it should be deleted.
+FIXED 2) CSS. The extra space between the modifiers and the closing brackets shouldn't be there.   
 3) On apps.js  You are doing a yes or an everything else response, which isn't bad, but it also isn't quite right for a yes no response quiz.   You may want to modify those.
 4) The console.log is happening, but it also isn't telling me anything.   It isn't saying information that is helpful.  Just what the user is typing in.   Not complete information like 'the user answered yes to question three.'
 
-A weird note is that your question 4 is positive affirmative if they say yes or no or anything else.   It is a bit confusing, when I was grading.   But still works.
+5) A weird note is that your question 4 is positive affirmative if they say yes or no or anything else.   It is a bit confusing, when I was grading.   But still works.
 You did good overall and the functionality is there.   Clean things up a bit and resubmit for full credit.
 Nadia Bahrami , Jun 17 at 9:22am
 

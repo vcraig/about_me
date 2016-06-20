@@ -1,28 +1,15 @@
 * {
   color: black;
-line-height: 1.4em;
-font-family: "Courier New", Courier, monospace;
-letter-spacing: 0.15em;
-
+  line-height: 1.4em;
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 0.15em;
 }
-
 h1 {
-  color: green;
-
+  color: #666699;
 }
-
-div {
-  color: black;
-
+.career h2 {
+  color: #333399;
 }
-div p {
-  color: black;
-
-}
-.my_list h2 {
-  color: grey;
-
-}
-div ul {
-  color: maroon;
+.top_ten_list h2 {
+  color: #660033;
 }
