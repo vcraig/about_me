@@ -6,18 +6,18 @@ var visitorName = prompt('Would you kindly input your name?');
 alert('Howdy ' + visitorName + '!');
 
 // Five Questions for user input, followed by alerts.
-// function runLogic1() {
-//   var answer1 = prompt('Q1: Does Val care about astrology?').toLowerCase();
-//   console.log('answer1 is ' + answer1);
-//   if (answer1 === 'yes' || answer1 === 'y') {
-//     tallyCorrect++;
-//     alert('Correct! Val is an Early Cambrian Astrologer. She was born under the sign of the Trilobite.');
-//   }
-//   else {
-//     alert('Wrong! Val is an Early Cambrian Astrologer. She was born under the sign of the Trilobite.');
-//   }
-// }
-// runLogic1();
+function runLogic1() {
+  var answer1 = prompt('Q1: Does Val care about astrology?').toLowerCase();
+  console.log('answer1 is ' + answer1);
+  if (answer1 === 'yes' || answer1 === 'y') {
+    tallyCorrect++;
+    alert('Correct! Val is an Early Cambrian Astrologer. She was born under the sign of the Trilobite.');
+  }
+  else {
+    alert('Wrong! Val is an Early Cambrian Astrologer. She was born under the sign of the Trilobite.');
+  }
+}
+runLogic1();
 
 function runLogic2() {
   var answer2 = prompt('Q2: Is Val happily married to a pretzel baker?').toLowerCase();
