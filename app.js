@@ -12,9 +12,10 @@ function runLogic1() {
   if (answer1 === 'yes' || answer1 === 'y') {
     tallyCorrect++;
     alert('Correct! Val is an Early Cambrian Astrologer. She was born under the sign of the Trilobite.');
-  }
-  else {
+  } else if(answer1 === 'no' || answer1 === 'n'){
     alert('Wrong! Val is an Early Cambrian Astrologer. She was born under the sign of the Trilobite.');
+  } else {
+    alert('Please enter yes or no.');
   }
 }
 runLogic1();
@@ -26,10 +27,13 @@ function runLogic2() {
     tallyCorrect++;
     alert('Partly correct. Val is happily married, but the man cannot bake.');
   }
-  else {
+  else if(answer2 === 'no' || answer2 === 'n') {
     alert('Wrong.');
+  } else{
+    alert('Please enter yes or no.');
   }
 }
+
 runLogic2();
 
 function runLogic3() {
@@ -109,27 +113,27 @@ runLogic6();
 console.log('Tally following Q6 = ' + tallyCorrect);
 
 //Question 7: User given six tries to guess one out of several correct responses.
-// function runLogic7() {
-//   var formerDomicile = ['ct','nj','ny','tx','connecticut','new jersey','new york','texas'];
-//   var counter = 0;
-//   while (counter < 6) {
-//     var myQuestion = prompt('Guess which state I have lived in.').toLowerCase();
-//     counter++;
-//     console.log(counter + ' guesses counted');
-//     console.log('lowercase response ' + myQuestion);
-//     for (var i = 0; i < formerDomicile.length; i++) {
-//       if (myQuestion === formerDomicile[i]) {
-//         alert('correct');
-//         counter = 9;
-//         tallyCorrect++;
-//         break;
-//       }
-//     }
-//     if (counter === 6) {
-//       alert('Sorry. You have used all your attempts.');
-//     }
-//   }
-// }
-// runLogic7();
+function runLogic7() {
+  var formerDomicile = ['ct','nj','ny','tx','connecticut','new jersey','new york','texas'];
+  var counter = 0;
+  while (counter < 6) {
+    var myQuestion = prompt('Guess which state I have lived in.').toLowerCase();
+    counter++;
+    console.log(counter + ' guesses counted');
+    console.log('lowercase response ' + myQuestion);
+    for (var i = 0; i < formerDomicile.length; i++) {
+      if (myQuestion === formerDomicile[i]) {
+        alert('correct');
+        counter = 9;
+        tallyCorrect++;
+        break;
+      }
+    }
+    if (counter === 6) {
+      alert('Sorry. You have used all your attempts.');
+    }
+  }
+}
+runLogic7();
 console.log('Tally following Q7 = ' + tallyCorrect);
 alert('Congrats! You got ' + tallyCorrect + ' correct responses.');
